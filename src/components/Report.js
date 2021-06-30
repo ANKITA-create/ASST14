@@ -42,18 +42,18 @@ constructor(props) {
             //     <div class="jumbotron jumbotron-fluid py-4">
         <div class="container">
         
-        <h1 class="display-4 text-center">End of the day</h1>
+        <h1 class="display-4 text-center">Report</h1>
           
               <table id="example" class="display table">
             <thead class="thead-dark">
                 <tr>
                     <th>Timestamp</th>
-                    <th>Date</th>
-                    <th>Category</th>
-                    <th>Flat no </th>
                     <th>Name</th>
-                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Flat Number </th>
                     <th>Temperature</th>
+                    <th>Image</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -62,12 +62,11 @@ constructor(props) {
                 return (
                     <tr> 
                     <td>{data.Timestamp}</td>
-                    <td>{data.Date}</td>   
+                    <td>{data.Name}</td>   
                     <td>{data.Category}</td>
                     <td>{data.Flat_Id}</td>
-                    <td>{data.Name}</td>
-                    <td> <img src={data.Img_Link} /> </td>
                     <td>{data.Temperature}</td>
+                    <td> <img src={data.Img_Link} /> </td>
                     </tr>
                     
                 );
