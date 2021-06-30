@@ -64,7 +64,7 @@ class App extends React.Component {
           
           navigator.serviceWorker.ready.then(function(registration) {
             
-            registration.showNotification('Knock Knock ');
+            registration.showNotification('New Request');
           });
         }
       
